@@ -1,0 +1,28 @@
+<html>
+    <body>
+    <h2 style="color: crimson;">
+    Hola alumnos esta es nuestra primera plantilla con Django
+    </h2>
+
+    {# No temas diseñador ignora esta parte! esto es un comentario #}
+
+    {% if nombre_persona == 'Marlene' %}
+
+    <p>El curso lo imparte el profesor titular</p>
+
+    {% else %}
+
+    <p>El curso lo imarte el profesor suplente</p>
+
+
+    {% endif %}
+
+
+    <p>Buenos días: {{nombre_persona.upper}} {{apellido_persona.upper}}</p>
+    <p>Hoy es d&iacute;a: {{momento_actual.day}} / {{momento_actual.month}} / {{momento_actual.year}}</p>
+    <p><strong>HOLA </strong></p>
+
+
+    </body>
+</html>
+    
